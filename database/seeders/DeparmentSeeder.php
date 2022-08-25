@@ -14,7 +14,8 @@ class DeparmentSeeder extends Seeder
 	 * @return void
 	 */
 	public function run()
-	{
+	{	
+		Department::truncate();
 		$deparments = [
 			['name' => 'Antioquia', 'code' => 5],
 			['name' => 'Atlantico', 'code' => 8],

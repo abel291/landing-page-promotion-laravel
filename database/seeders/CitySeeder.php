@@ -15,7 +15,8 @@ class CitySeeder extends Seeder
 	 * @return void
 	 */
 	public function run()
-	{
+	{	
+		City::truncate();
 		$cities = [
 			[1, 1, 1, 'MEDELLIN'],
 			[2, 1, 2, 'ABEJORRAL'],
