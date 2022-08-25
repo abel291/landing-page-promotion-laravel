@@ -12,7 +12,7 @@ class HomeController extends Controller
 	public function index()
 	{
 
-		$promotions = Promotion::get();
+		$promotions = Promotion::with('city.department')->get();
 		$winner = $promotions->where('winner', 1)->first();
 		return view('app', compact('winner', 'promotions'));
 	}
