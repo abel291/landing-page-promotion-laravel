@@ -20,5 +20,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('app');
 // });
 Route::get('/', [HomeController::class, 'index'])->name('index');
+
 Route::get('/delete-promotion', [HomeController::class, 'deletePromotion'])->name('deletePromotion');
+
 Route::get('/export-promotion-list', [HomeController::class, 'exportPromotionList'])->name('exportPromotionList');

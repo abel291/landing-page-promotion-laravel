@@ -39,26 +39,26 @@ class Form extends Component
 		'promotion.email' => 'Correo electronico',
 		'selectedDepartment' => 'Departamanto',
 		'selectedCity' => 'Ciudad',
-		'habeasData' => 'Terminos y condiciones',
+		'habeasData' => 'Política de protección'
 	];
-
 	public function mount()
 	{
-		$this->promotion = \App\Models\Promotion::factory()->make();
+		// $this->promotion = \App\Models\Promotion::factory()->make();
+		$this->promotion = new Promotion();
 		$this->deparments = Department::orderBy('name', 'asc')->get();
-		// $this->cities = collect();
-		// $this->selectedDepartment = null;
-		// $this->selectedCity = null;
+		$this->cities = collect();
+		$this->selectedDepartment = null;
+		$this->selectedCity = null;
 
-		$deparment = $this->deparments->random();
-		$this->cities = $this->deparments->random()->cities;
-		$this->selectedDepartment = $deparment->id;
-		$this->selectedCity = $this->cities->random()->id;
+		// $deparment = $this->deparments->random();
+		// $this->cities = $this->deparments->random()->cities;
+		// $this->selectedDepartment = $deparment->id;
+		// $this->selectedCity = $this->cities->random()->id;
 	}
 
 	public function store()
 	{
-		//sleep(10000);
+		
 		$this->validate();
 
 		Promotion::create([
