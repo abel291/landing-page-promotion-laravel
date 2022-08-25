@@ -21,7 +21,7 @@ return new class extends Migration
 			$table->string('phone');
 			$table->boolean('winner')->default(0);
 			$table->string('email')->unique();
-			$table->foreignId('city_id');
+			
 			$table->timestamps();
 		});
 	}

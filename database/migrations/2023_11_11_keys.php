@@ -13,12 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('cities', function (Blueprint $table) {
-            $table->id();
-			$table->string('name');
-            $table->integer('code');
-			$table->timestamps();
+        Schema::table('promotions', function (Blueprint $table) {
+			$table->foreignId('city_id')->constrained();           
         });
+
+        Schema::table('cities', function (Blueprint $table) {
+            $table->foreignId('department_id')->constrained()->cascadeOnDelete();
+        });
+		
+        
     }
 
     /**
@@ -28,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cities');
+        //
     }
 };
