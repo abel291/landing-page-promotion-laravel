@@ -6,11 +6,11 @@
 
 <!-- Section 1 -->
 <section class="py-20 bg-gray-50">
-    <div class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
+    <div class="container items-center max-w-7xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
         <div class="flex flex-wrap items-center -mx-3">
             <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
                 <div class="py-16 px-10 sm:py-24 sm:px-6 lg:px-8 ">
-                    <h2 class="text-3xl text-yellow-500 font-bold tracking-wide uppercase">Ganador(a)</h2>
+                    <h2 class="text-3xl text-yellow-500 font-bold tracking-wide uppercase">Ganador elegido</h2>
                     <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
                         {{ $winner->first_name }} {{ $winner->last_name }}</p>
 
@@ -56,8 +56,8 @@
     </div>
 </section>
 
-<section class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
-    <div class="max-w-6xl mx-auto py-16 px-10 sm:py-24 sm:px-6 lg:px-8 ">
+<section class="container items-center max-w-7xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
+    <div class="max-w-7xl mx-auto py-16 px-10 sm:py-24 sm:px-6 lg:px-8 ">
         <h2 class="text-3xl text-yellow-500 font-bold tracking-wide uppercase">Lista de Clientes registrados</h2>
 
 
