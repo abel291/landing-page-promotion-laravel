@@ -29,6 +29,7 @@ class PromotionsExport implements WithMapping, FromQuery, WithHeadings
 			$promotion->cedula,
 			$promotion->city->department->name,
 			$promotion->city->name,
+			$promotion->created_at->format('Y-m-s H:i:s'),
 		];
 	}
 	public function headings(): array
@@ -41,6 +42,7 @@ class PromotionsExport implements WithMapping, FromQuery, WithHeadings
 			'Cedula',
 			'Departamento',
 			'Ciudad',
+			'Fecha de creacion',
 		];
 	}
 }
