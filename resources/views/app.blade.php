@@ -23,17 +23,12 @@
         @include('partials.header')
 
     </div>
-    
-        
-    
+
     <div class="flex flex-col justify-center flex-grow ">
         @if ($winner)
             @include('partials.winner')
-        @else
-            <div>
-                <livewire:form />
-            </div>
         @endif
+        <livewire:form />
     </div>
     @livewireScripts
 </body>
