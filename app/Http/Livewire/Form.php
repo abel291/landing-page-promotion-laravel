@@ -30,6 +30,18 @@ class Form extends Component
 		'habeasData' => 'required|accepted',
 	];
 
+
+	protected $validationAttributes = [
+		'promotion.first_name' => 'Nombre',
+		'promotion.last_name' => 'Apellido',
+		'promotion.cedula' => 'Cedula',
+		'promotion.phone' => 'Telefono',
+		'promotion.email' => 'Correo electronico',
+		'selectedDepartment' => 'Departamanto',
+		'selectedCity' => 'Ciudad',
+		'habeasData' => 'Terminos y condiciones',
+	];
+
 	public function mount()
 	{
 		$this->promotion = \App\Models\Promotion::factory()->make();
@@ -59,8 +71,8 @@ class Form extends Component
 		]);
 
 
-		$this->dispatchBrowserEvent('notification');
-		$this->mount();
+		$this->resetErrorBag();
+		$this->mount();		
 		$this->promotion = new Promotion();
 
 		return redirect('/')->with('success', 'success');
