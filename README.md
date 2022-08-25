@@ -1,64 +1,42 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# PRUEBA TÉCNICA DESARROLLADOR BACKEND
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Una compañía importante de automóviles va a realizar un sitio promocional para
+recolección de datos de clientes actuales de la marca en Bogotá. El concurso consiste
+en que el usuario se registre en una Landing page.
 
-## About Laravel
+Posteriormente luego de que existan mínimo 5 usuarios seleccione un ganador al azar
+y lo muestre en la Landing page.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Características funcionales:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+● Fecha y hora de creación
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+● Nombre: Campo alfabético, restringido a otros caracteres (Dato Obligatorio)
 
-## Learning Laravel
+● Apellido: Campo alfabético, restringido a otros caracteres (Dato Obligatorio)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+● Cédula: Campo numérico, restringido a otros caracteres (Dato Obligatorio)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+● Departamento (Obligatorio): Menú desplegable con la lista de departamentos
+de Colombia
 
-## Laravel Sponsors
+● Ciudad (Obligatorio): Menú desplegable dependiente del departamento
+anteriormente elegido
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+● Celular: Campo numérico, restringido a otros caracteres (Dato Obligatorio)
+● Correo Electrónico: Campo alfanumérico restringido a otros caracteres
+(Obligatorio el @)
 
-### Premium Partners
+● Campo Habeas Data (“Autorizo el tratamiento de mis datos de acuerdo con la
+finalidad establecida en la política de protección de datos personales”. Haga clic
+aquí)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+● Debe poderse descargar un Excel con la información contenida en la base de
+datos de los registros.
 
-## Contributing
+● Debe haber una estructura de base de datos.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Screenshot 🖥️️
+![screenshot-1](/public/screenshot/img-1.png)
+![screenshot-1](/public/screenshot/img-2.png)
+![screenshot-1](/public/screenshot/img-3.png)
