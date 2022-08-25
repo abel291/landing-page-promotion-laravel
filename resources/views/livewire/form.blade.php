@@ -143,8 +143,8 @@
 									wire:click="store" 
 									wire:loading.attr="disabled" 
 									wire:target="store"
-                                    wire:loading.class="bg-red-100 hover:bg-red-100"
-                                    wire:loading.class.remove="bg-red-500 hover:bg-red-600"class="inline-block w-full px-3 py-3 text-lg font-medium text-center text-white transition duration-200 bg-red-500 hover:bg-red-600 ease rounded bg-red-500">
+                                    wire:loading.class="bg-yellow-100 hover:bg-yellow-100"
+                                    wire:loading.class.remove="bg-yellow-500 hover:bg-yellow-600"class="inline-block w-full px-3 py-3 text-lg font-medium text-center text-white transition duration-200 bg-yellow-500 hover:bg-yellow-600 ease rounded bg-yellow-500">
                                     <span wire:loading.remove wire:target="store">
                                         Registrarme
                                     </span>
