@@ -103,7 +103,7 @@
                                 <div wire:loading.remove>
                                     <select wire:model.defer="selectedCity"
                                         class="block w-full px-3 py-3 mt-1 text-lg placeholder-gray-400 bg-gray-200 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 rounded"
-                                        name="" id="" placeholder>
+                                        name="" id="" >
 
                                         <option>Selecione la ciudad</option>
                                         @foreach ($cities as $city)
