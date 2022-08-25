@@ -1,7 +1,8 @@
 <section class="relative w-full px-8 text-gray-700 bg-white body-font" data-tails-scripts="//unpkg.com/alpinejs">
     <div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
         <a href="#_"
-            class="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-black select-none">Promocion Bogota
+            class="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-black select-none">Promocion
+            Bogota
         </a>
 
         <div class="relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end">
@@ -18,7 +19,10 @@
                 </a>
             @else
                 <span class="text-gray-500">
-                    Registros {{ $promotions->count() }}/{{ env('PROMOTION_COUNT_MAX') }}
+                    Clientes {{ $promotions->count() }}/{{ env('PROMOTION_COUNT_MAX') }}
+                    <span class="text-xs block text-gray-400">Se eligira un ganador cuando existan mínimo
+                        {{ env('PROMOTION_COUNT_MAX') }}
+                        usuarios</span>
                 </span>
             @endif
         </div>
